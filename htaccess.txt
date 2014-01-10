@@ -1,0 +1,12 @@
+AddDefaultCharset utf-8
+RewriteEngine on
+RewriteEngine On
+Options +FollowSymlinks
+RewriteBase /
+RewriteCond %{HTTP_HOST} (.*)
+RewriteCond %{REQUEST_URI} /$ [NC]
+RewriteRule ^(.*)(/)$ $1 [L,R=301]
+RewriteRule ^([/a-z0-9\-]+)$ /?index.php=$1 [NC,L]
+
+
+
