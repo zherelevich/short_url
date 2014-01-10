@@ -1,0 +1,13 @@
+a {
+    color: #0063DC;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color:red;
+}
+
